@@ -1,0 +1,20 @@
+<link rel="stylesheet" type="text/css" href="/css/form.css" />
+
+<div class="formStyle">
+  <h2>Login</h2>
+  <div class="message">
+    <% if (messages.error){ %> <%= messages.error %> <% }%>
+  </div>
+  <form action="/login" method="POST">
+    <input type="email" id="email" name="email" required placeholder="Email" />
+    <input
+      type="password"
+      id="password"
+      name="password"
+      required
+      placeholder="Password"
+    />
+
+    <button type="submit">Login</button>
+  </form>
+</div>
